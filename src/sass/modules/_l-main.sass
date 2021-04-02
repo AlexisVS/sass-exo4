@@ -8,17 +8,230 @@
     .maecenas-left
         width: 45%
         .maecenas-left-title
-            font-size: 2.5rem
-            line-height: 4rem
+            font-size: 3.3rem
+            line-height: 5rem
             color: #444
             margin: 0
         .maecenas-left-text
-            font-size: 1.5rem
-            line-height: 2rem
+            font-size: 1.9rem
+            line-height: 2.8rem
             color: #aaa
     .maecenas-right
-        width: 45%
+        width: 48%
         p
-            font-size: 0.85rem
-            line-height: 1.8rem
+            font-size: 1.25rem
+            line-height: 2.2rem
             color: #999
+@media screen and ( max-width: 1650px )
+    .maecenas
+        width: 70%
+@media screen and ( max-width: 1410px )
+    .maecenas
+        flex-direction: column
+        .maecenas-left
+            width: auto
+        .maecenas-right
+            width: auto
+@media screen and ( max-width: 768px )
+    .maecenas 
+        .maecenas-left 
+            .maecenas-left-title
+                font-size: 2.2rem
+            .maecenas-left-text
+                font-size: 1.25rem
+.fringilla
+    background-color: #eee
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5rem 0
+    .fringilla-title
+        font-size: 3.3rem
+        color: #444
+        margin-bottom: 1rem
+    .fringilla-text
+        font-size: 1.9rem
+        margin: 0
+        color: #bbb
+    .fringilla-cards
+        display: flex
+        justify-content: space-between
+        width: 78%
+        padding-top: 8rem
+        .fringilla-card
+            width: 700px
+            img
+                width: 700px
+                vertical-align: bottom
+            p
+                background-color: #fff
+                margin: 0
+                text-align: center
+                font-size: 1.5rem
+                font-weight: bold
+                color: #444
+                padding: 3rem 0
+                box-shadow: inset 0 -1px 0 2px #ddd
+                background-position: 
+    .fringilla-buttons
+        padding: 1.5rem
+        margin: 4rem 0 
+        .fringilla-button
+            text-decoration: none
+            color: white
+            font-size: 1.5rem
+            font-weight: bold
+            margin: 0 0.6rem
+            padding: 1.5rem 3rem
+            border-radius: 5px
+        .red
+            background-color: #ff2b59
+        .black
+            background-color: #333
+@media screen and ( max-width: 1900px )
+    .fringilla 
+        .fringilla-cards 
+            .fringilla-card
+                width: 35vw
+                img
+                    width: 35vw
+                p
+                    font-size: 1.8vw
+@media screen and ( max-width: 800px )
+    .fringilla
+        .fringilla-title
+            text-align: center
+        .fringilla-text
+            margin: 0 2vw
+            font-size: 3vw
+        .fringilla-cards
+            padding-top: 4rem
+            flex-direction: column
+            .fringilla-card
+                width: 75vw
+                margin-bottom: 5rem
+                img
+                    width: 75vw
+                p
+                    font-size: 2.5vw
+        .fringilla-buttons
+            margin-top: 0
+@media screen and ( max-width: 670px )
+    .fringilla 
+        .fringilla-buttons
+            width: 80%
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 0
+            text-align: center
+            .red
+                margin-bottom: 2rem
+            .fringilla-button
+                width: inherit
+
+.vulputate
+    width: 75%
+    margin: 0 auto
+    .vulputate-title
+        font-size: 3.2rem
+        margin-bottom: 2rem
+        color: #444
+    .vulputate-text
+        font-size: 1.9rem
+        margin: 0
+        color: #bbb
+    .vulputate-cards-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-top: 5rem
+        .vulputate-card
+            display: flex
+            width: 47%
+            padding-bottom: 3rem
+            .vulputate-card-left
+                .title
+                    color: #444
+                .subtitle
+                    color: #aaa
+                .text
+                    color: #888
+                    font-size: 1.1rem
+                    line-height: 2rem
+                    margin-top: 1.5rem
+            .vulputate-right
+                .vulputate-right-wrapper
+                    width: 200px
+                    img
+                        width: 100%
+                        border-radius: 100%
+                        border: 0.5rem solid #ddd
+@media screen and ( max-width: 1852px )
+    .vulputate
+        width: 100%
+        .vulputate-cards-wrapper
+            flex-direction: column
+            align-items: center
+            .vulputate-card
+                width: 670px
+@media screen and ( max-width: 768px )
+    .vulputate
+        text-align: center
+        .vulputate-cards-wrapper
+            .vulputate-card
+                flex-direction: column
+                width: auto
+                .vulputate-card-left
+                    margin: 0
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    order: 1 !important
+                    p
+                        width: 400px
+                .vulputate-right
+                    margin: 0 auto
+                    margin-bottom: 2rem
+    .order
+        order: 0 !important
+.elementum
+    background: url("../images/banner.jpg")
+    height: 500px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    .elementum-wrapper
+        height: 500px
+        background-color: rgba(46, 47, 56, 0.75)
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .elementum-title
+            color: white
+            font-size: 3.3rem
+            margin-bottom: 0
+        .elementum-subtitle
+            font-size: 1.7rem
+            color: #aaa
+            margin-bottom: 3rem
+        .elementum-button
+            text-decoration: none
+            color: white
+            font-size: 1.5rem
+            font-weight: bold
+            margin: 0 0.6rem
+            padding: 1.5rem 3rem
+            border-radius: 5px
+            background-color: #ff2b59
+@media screen and ( max-width: 800px )
+    .elementum
+        .elementum-wrapper
+            .elementum-title
+                font-size: 6vw
+            .elementum-subtitle
+                font-size: 4vw
+    
